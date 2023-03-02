@@ -1,6 +1,6 @@
 # BetterDiscordLibrary
 
-*A list of addons and themes created for BetterDiscord*
+A list of addons and themes created for BetterDiscord
 
 This repository is a holding for my BetterDiscord projects
 

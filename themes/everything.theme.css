@@ -1,0 +1,100 @@
+/**
+* @name        Dev-384's Theme Pack
+* @description This theme includes all of my themes, compled to one theme
+* @author      Dev-384
+* @version     1.0.0
+* @source      https://github.com/Dev-384/BetterDiscordLibrary
+*/
+
+:root {
+    --link-url-display: 0px /* (0px) or (auto) */;
+    --link-embed-display: grid /* (none) or (grid) */;
+}
+/* Links */
+.contents-2MsGLg a[role=button]:link{
+    color: var(--mention-foreground);
+    background-color: var(--mention-background);
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
+    font-size: var(--link-url-display);
+}
+.contents-2MsGLg a[role=button]:link:before {
+    font-weight: 600;
+    content: "LINK (Hover to see URL)";
+    display: inline-block;
+    left: 0px;
+    font-size: 1rem;
+    /* background: url("/assets/7c13aa0def6ccb6932f47dedd33f59c1.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2px;
+    color: var(--mention-foreground);
+    background-color: var(--mention-background);
+    border-radius: 3px;
+    padding: 0 2px;
+}
+.grid-1aWVsE.hasThumbnail-388RMe {
+    display: var(--link-embed-display);
+}
+
+/* Plugin and Theme Cards */
+div.bd-addon-card .bd-description-wrap {
+    height: 0px;
+    max-height: 175px;
+    overflow: hidden;
+    position: absolute;
+    width: 325px;
+    padding: 0px 1rem;
+    border-radius: 5px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    transition: 0.5s ease;
+    transform: translateY(10px);
+    background-color: var(--background-secondary);
+}
+div.bd-addon-card .bd-controls, div.bd-addon-card .bd-links {
+    transform: translateY(-0.25rem);
+    transition-duration: 400ms;
+    border: 5px solid var(--background-secondary);
+    background-color: var(--background-secondary);
+    border-radius: 5px;
+    
+}
+div.bd-addon-card .bd-addon-header {
+    border-radius: 5px;
+}
+div.bd-addon-card .bd-controls:hover, div.bd-addon-card .bd-links:hover {
+    transform: translateY(-0.5rem);
+}
+div.bd-addon-card .bd-footer {
+    overflow: initial !important;
+    transition-duration: 400ms;
+    height: 0px;
+    background: transparent !important;
+}
+div.bd-addon-card {
+    background: transparent !important;
+    max-width: 325px;
+    min-width: 325px;
+}
+div.bd-addon-card:hover .bd-description-wrap {
+    height: fit-content;
+    z-index: 9999999999999;
+}
+
+/* User Buttons */
+.contents-3NembX svg {
+    transition-duration: 400ms;
+}
+
+.contents-3NembX:hover svg {
+    transform: translateY(-10px) rotate(10deg);
+}
+
+/* Mentions */
+body {
+    --background-mentioned: transparent;
+    --background-mentioned-hover: transparent;
+}

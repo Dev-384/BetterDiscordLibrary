@@ -1,0 +1,39 @@
+/**
+* @name        BetterLinks
+* @description Changes the apperiance of links
+* @author      Dev-384
+* @version     1.0.0
+* @source      https://github.com/Dev-384/BetterDiscordLibrary
+*/
+
+:root {
+    --link-url-display: 0px /* (0px) or (auto) */;
+    --link-embed-display: grid /* (none) or (grid) */;
+}
+/* Links */
+.contents-2MsGLg a[role=button]:link{
+    color: var(--mention-foreground);
+    background-color: var(--mention-background);
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
+    font-size: var(--link-url-display);
+}
+.contents-2MsGLg a[role=button]:link:before {
+    font-weight: 600;
+    content: "LINK (Hover to see URL)";
+    display: inline-block;
+    left: 0px;
+    font-size: 1rem;
+    /* background: url("/assets/7c13aa0def6ccb6932f47dedd33f59c1.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2px;
+    color: var(--mention-foreground);
+    background-color: var(--mention-background);
+    border-radius: 3px;
+    padding: 0 2px;
+}
+.grid-1aWVsE.hasThumbnail-388RMe {
+    display: var(--link-embed-display);
+}

@@ -1,0 +1,12 @@
+/**
+* @name        HideMentions
+* @description Don't like having the colour of mentions in your way? Hide them using this!
+* @author      Dev-384
+* @version     1.0.0
+* @source      https://github.com/Dev-384/BetterDiscordLibrary
+*/
+
+body {
+    --background-mentioned: transparent;
+    --background-mentioned-hover: transparent;
+}
